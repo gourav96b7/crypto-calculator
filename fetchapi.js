@@ -23,7 +23,7 @@ async function getCryptoPrices() {
         let multiplier = valueInput.value;
         let data = await response.json();
         let price = data[toCurrency];
-        document.getElementById("final-value").value = price * multiplier;  console.log(multiplier);
+        document.getElementById("final-value").value = price * multiplier;
     } 
 
     // Handle any errors that might occur during the fetch operation
