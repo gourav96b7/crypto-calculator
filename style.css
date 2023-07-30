@@ -30,3 +30,8 @@ body {
 #source, #target {
     cursor: pointer;
 }
+
+li:hover {
+    background-color: rgb(221, 221, 180);
+    font-weight: bold;
+}
