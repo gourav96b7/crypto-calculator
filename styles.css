@@ -19,19 +19,6 @@ body {
     border-radius: 25px;
 }
 
-.list-group {
-    visibility: hidden;
-}
-
-.expand {
-    visibility: visible;
-}
-
-#source, #target {
+select {
     cursor: pointer;
-}
-
-li:hover {
-    background-color: rgb(221, 221, 180);
-    font-weight: bold;
 }

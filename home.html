@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- bootstrap library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container py-5 px-5 text-white">
+        <h1>Crypto Converter</h1>
+        <label for="fromCrypto" class="mt-2">Convert from:</label>
+        <select name="from-crypto" id="fromCrypto" class="form-select">
+            <option value="BTC">BTC</option>
+            <option value="SOL">SOL</option>
+            <option value="SHIB">SHIB</option>
+            <option value="BNB">BNB</option>
+            <option value="ETH">ETH</option>
+            <option value="LTC">LTC</option>
+            <option value="DASH">DASH</option>
+            <option value="ZEC">ZEC</option>
+            <option value="ETC">ETC</option>
+        </select>
+        <label for="toCurrency" class="mt-2">Convert to:</label>
+        <select name="to-currency" id="toCurrency" class="form-select">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+        </select>
+        <label for="qty" class="mt-2">Enter quantity:</label>
+        <input type="number" id="quantity" class="form-control" required />
+        <button class="btn btn-success mt-3 w-100 fw-bold" onclick="convert()">CONVERT</button>
+        <input type="number" id="result" class="form-control mt-3" disabled/>
+    </div>
+
+    <script src="convert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
